@@ -1,0 +1,4588 @@
+{
+    "root": {
+        "count": {
+            "max": {
+                "measure": 1
+            },
+            "min": {
+                "measure": 1
+            }
+        },
+        "children": {
+            "distinct": 134,
+            "count": {
+                "max": {
+                    "measure": 134
+                }
+            }
+        },
+        "elements": {
+            "PlayerID": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 13320
+                    },
+                    "min": {
+                        "value": 13320
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 13320
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 13320
+                    }
+                }
+            },
+            "FieldGoalPercentage": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsHadBlocked": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Safeties": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "BlockedKickReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ExtraPointsAttempted": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntNetAverage": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntInside20": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntTouchbacks": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturnFairCatches": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturnFairCatches": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumblesOutOfBounds": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumblesOwnRecoveries": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 1.1
+                    },
+                    "min": {
+                        "value": 1.1
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1.1
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1.1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 1.1
+                    }
+                }
+            },
+            "PlayerSeasonID": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 15501235
+                    },
+                    "min": {
+                        "value": 15501235
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 8,
+                        "value": 15501235
+                    },
+                    "min": {
+                        "measure": 8,
+                        "value": 15501235
+                    }
+                }
+            },
+            "FantasyPosition": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": "QB"
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": "QB"
+                    }
+                }
+            },
+            "ExtraPointsHadBlocked": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Touchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 11.3
+                    },
+                    "min": {
+                        "value": 11.3
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 11.3
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 11.3
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 11.3
+                    }
+                }
+            },
+            "SpecialTeamsTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "DefensiveTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "OffensiveTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 11.3
+                    },
+                    "min": {
+                        "value": 11.3
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 11.3
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 11.3
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 11.3
+                    }
+                }
+            },
+            "Tackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ReceivingYardsPerTarget": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ReceptionPercentage": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FantasyPointsPPR": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 438.5
+                    },
+                    "min": {
+                        "value": 438.5
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 438.5
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 438.5
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 438.5
+                    }
+                }
+            },
+            "FantasyPoints": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 438.5
+                    },
+                    "min": {
+                        "value": 438.5
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 438.5
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 438.5
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 438.5
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 438.5
+                    }
+                }
+            },
+            "TwoPointConversionReceptions": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "TwoPointConversionRuns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "TwoPointConversionPasses": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ExtraPointsMade": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsLongestMade": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntsHadBlocked": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsAttempted": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "DefensiveTeamSnaps": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 1240
+                    },
+                    "min": {
+                        "value": 1240
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 1240
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 1240
+                    }
+                }
+            },
+            "AverageDraftPositionPPR": {
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                }
+            },
+            "AverageDraftPosition": {
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                }
+            },
+            "FantasyPointsYahoo": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 449.8
+                    },
+                    "min": {
+                        "value": 449.8
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 449.8
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 449.8
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 449.8
+                    }
+                }
+            },
+            "FantasyPointsDraftKings": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 461
+                    },
+                    "min": {
+                        "value": 461
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 461
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 461
+                    }
+                }
+            },
+            "FieldGoalsMade50Plus": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsMade40to49": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsMade30to39": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsMade20to29": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsMade0to19": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FantasyPointsFanDuel": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 449.8
+                    },
+                    "min": {
+                        "value": 449.8
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 449.8
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 449.8
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 449.8
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 449.8
+                    }
+                }
+            },
+            "TwoPointConversionReturns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "AuctionValuePPR": {
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                }
+            },
+            "AuctionValue": {
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                }
+            },
+            "SpecialTeamsTeamSnaps": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 456
+                    },
+                    "min": {
+                        "value": 456
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 456
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 456
+                    }
+                }
+            },
+            "OffensiveTeamSnaps": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 1241
+                    },
+                    "min": {
+                        "value": 1241
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 1241
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 1241
+                    }
+                }
+            },
+            "BlockedKickReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SpecialTeamsSnapsPlayed": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "DefensiveSnapsPlayed": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "OffensiveSnapsPlayed": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 1213
+                    },
+                    "min": {
+                        "value": 1213
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 1213
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 1213
+                    }
+                }
+            },
+            "WindSpeed": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 5
+                    },
+                    "min": {
+                        "value": 5
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 5
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 5
+                    }
+                }
+            },
+            "Humidity": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 69
+                    },
+                    "min": {
+                        "value": 69
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 69
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 69
+                    }
+                }
+            },
+            "Temperature": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 72
+                    },
+                    "min": {
+                        "value": 72
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 72
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 72
+                    }
+                }
+            },
+            "SafetiesAllowed": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ShortName": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "datetime": {
+                    "max": {
+                        "value": "C.Newton"
+                    },
+                    "min": {
+                        "value": "C.Newton"
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 8,
+                        "value": "C.Newton"
+                    },
+                    "min": {
+                        "measure": 8,
+                        "value": "C.Newton"
+                    }
+                }
+            },
+            "MiscFumblesRecovered": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 1.1
+                    },
+                    "min": {
+                        "value": 1.1
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1.1
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1.1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 1.1
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 1.1
+                    }
+                }
+            },
+            "MiscFumblesForced": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SpecialTeamsFumblesRecovered": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SpecialTeamsFumblesForced": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntNetYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FieldGoalsMade": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntAverage": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SeasonType": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 1
+                    },
+                    "min": {
+                        "value": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1
+                    }
+                }
+            },
+            "PassingTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 39.4
+                    },
+                    "min": {
+                        "value": 39.4
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 39.4
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 39.4
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 39.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 39.4
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 39.4
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 39.4
+                    }
+                }
+            },
+            "ReceivingYardsPerReception": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ReceivingYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Receptions": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ReceivingTargets": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "RushingLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 53
+                    },
+                    "min": {
+                        "value": 53
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 53
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 53
+                    }
+                }
+            },
+            "RushingTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 11.3
+                    },
+                    "min": {
+                        "value": 11.3
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 11.3
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 11.3
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 11.3
+                    }
+                }
+            },
+            "RushingYardsPerAttempt": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 5.4
+                    },
+                    "min": {
+                        "value": 5.4
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 5.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 5.4
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 5.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 5.4
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 5.4
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 5.4
+                    }
+                }
+            },
+            "RushingYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 716.8
+                    },
+                    "min": {
+                        "value": 716.8
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 716.8
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 716.8
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 716.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 716.8
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 716.8
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 716.8
+                    }
+                }
+            },
+            "RushingAttempts": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 148.8
+                    },
+                    "min": {
+                        "value": 148.8
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 148.8
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 148.8
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 148.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 148.8
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 148.8
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 148.8
+                    }
+                }
+            },
+            "PassingSackYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 320.1
+                    },
+                    "min": {
+                        "value": 320.1
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 320.1
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 320.1
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 320.1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 320.1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 320.1
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 320.1
+                    }
+                }
+            },
+            "PassingSacks": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 37.2
+                    },
+                    "min": {
+                        "value": 37.2
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 37.2
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 37.2
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 37.2
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 37.2
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 37.2
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 37.2
+                    }
+                }
+            },
+            "PassingLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 83.4
+                    },
+                    "min": {
+                        "value": 83.4
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 83.4
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 83.4
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 83.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 83.4
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 83.4
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 83.4
+                    }
+                }
+            },
+            "PassingRating": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 112
+                    },
+                    "min": {
+                        "value": 112
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 112
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 112
+                    }
+                }
+            },
+            "PassingInterceptions": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 11.3
+                    },
+                    "min": {
+                        "value": 11.3
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 11.3
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 11.3
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 11.3
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 11.3
+                    }
+                }
+            },
+            "PassingYardsPerCompletion": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 14.7
+                    },
+                    "min": {
+                        "value": 14.7
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 14.7
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 14.7
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 14.7
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 14.7
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 14.7
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 14.7
+                    }
+                }
+            },
+            "ReceivingLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PassingYardsPerAttempt": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 8.8
+                    },
+                    "min": {
+                        "value": 8.8
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 8.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 8.8
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 8.8
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 8.8
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 8.8
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 8.8
+                    }
+                }
+            },
+            "PassingCompletionPercentage": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 67.4
+                    },
+                    "min": {
+                        "value": 67.4
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 2,
+                        "value": 67.4
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 67.4
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 67.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 67.4
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 67.4
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 67.4
+                    }
+                }
+            },
+            "PassingYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 4324.3
+                    },
+                    "min": {
+                        "value": 4324.3
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 4,
+                        "value": 4324.3
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 4324.3
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 4324.3
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 4324.3
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 6,
+                        "value": 4324.3
+                    },
+                    "min": {
+                        "measure": 6,
+                        "value": 4324.3
+                    }
+                }
+            },
+            "PassingCompletions": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 333.6
+                    },
+                    "min": {
+                        "value": 333.6
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 333.6
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 333.6
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 333.6
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 333.6
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 333.6
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 333.6
+                    }
+                }
+            },
+            "PassingAttempts": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 557.9
+                    },
+                    "min": {
+                        "value": 557.9
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 3,
+                        "value": 557.9
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 557.9
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 557.9
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 557.9
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 5,
+                        "value": 557.9
+                    },
+                    "min": {
+                        "measure": 5,
+                        "value": 557.9
+                    }
+                }
+            },
+            "Started": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 16
+                    },
+                    "min": {
+                        "value": 16
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 16
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 16
+                    }
+                }
+            },
+            "Played": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 16
+                    },
+                    "min": {
+                        "value": 16
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 16
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 16
+                    }
+                }
+            },
+            "Activated": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 16
+                    },
+                    "min": {
+                        "value": 16
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": 16
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": 16
+                    }
+                }
+            },
+            "PositionCategory": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": "OFF"
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": "OFF"
+                    }
+                }
+            },
+            "Position": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 2,
+                        "value": "QB"
+                    },
+                    "min": {
+                        "measure": 2,
+                        "value": "QB"
+                    }
+                }
+            },
+            "Name": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 10,
+                        "value": "Cam Newton"
+                    },
+                    "min": {
+                        "measure": 10,
+                        "value": "Cam Newton"
+                    }
+                }
+            },
+            "Number": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 1
+                    },
+                    "min": {
+                        "value": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 1
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 1
+                    }
+                }
+            },
+            "Team": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": "CAR"
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": "CAR"
+                    }
+                }
+            },
+            "Season": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 2015
+                    },
+                    "min": {
+                        "value": 2015
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 4,
+                        "value": 2015
+                    },
+                    "min": {
+                        "measure": 4,
+                        "value": 2015
+                    }
+                }
+            },
+            "ReceivingTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Fumbles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 5.6
+                    },
+                    "min": {
+                        "value": 5.6
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 5.6
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 5.6
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 5.6
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 5.6
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 5.6
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 5.6
+                    }
+                }
+            },
+            "PuntYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "QuarterbackHits": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Punts": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "MiscAssistedTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "MiscSoloTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 3.4
+                    },
+                    "min": {
+                        "value": 3.4
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 3.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 3.4
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 3.4
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 3.4
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 3.4
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 3.4
+                    }
+                }
+            },
+            "SpecialTeamsAssistedTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SpecialTeamsSoloTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "BlockedKicks": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "InterceptionReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "InterceptionReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "Interceptions": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumbleReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumbleReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumblesRecovered": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumblesForced": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PassesDefended": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SackYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "FumblesLost": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "decimal": {
+                    "max": {
+                        "value": 4.5
+                    },
+                    "min": {
+                        "value": 4.5
+                    }
+                },
+                "scale": {
+                    "max": {
+                        "measure": 1,
+                        "value": 4.5
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 4.5
+                    }
+                },
+                "precision": {
+                    "max": {
+                        "measure": 1,
+                        "value": 4.5
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 4.5
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 3,
+                        "value": 4.5
+                    },
+                    "min": {
+                        "measure": 3,
+                        "value": 4.5
+                    }
+                }
+            },
+            "Sacks": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "TacklesForLoss": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "AssistedTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "SoloTackles": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturnLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturnYardsPerAttempt": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "KickReturns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturnLong": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturnTouchdowns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturnYardsPerAttempt": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturnYards": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "PuntReturns": {
+                "unique": 1,
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "int": {
+                    "max": {
+                        "value": 0
+                    },
+                    "min": {
+                        "value": 0
+                    }
+                },
+                "varchar": {
+                    "max": {
+                        "measure": 1,
+                        "value": 0
+                    },
+                    "min": {
+                        "measure": 1,
+                        "value": 0
+                    }
+                }
+            },
+            "ScoringDetails": {
+                "count": {
+                    "max": {
+                        "measure": 1
+                    },
+                    "min": {
+                        "measure": 1
+                    }
+                },
+                "children": {
+                    "distinct": 1,
+                    "count": {
+                        "max": {
+                            "measure": 45
+                        }
+                    }
+                },
+                "elements": {
+                    "ScoringDetails": {
+                        "count": {
+                            "max": {
+                                "measure": 45
+                            },
+                            "min": {
+                                "measure": 45
+                            }
+                        },
+                        "children": {
+                            "distinct": 10,
+                            "count": {
+                                "max": {
+                                    "measure": 10
+                                }
+                            }
+                        },
+                        "elements": {
+                            "GameKey": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": "201511705"
+                                    },
+                                    "min": {
+                                        "value": "201510115"
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 9,
+                                        "value": "201510115"
+                                    },
+                                    "min": {
+                                        "measure": 9,
+                                        "value": "201510115"
+                                    }
+                                }
+                            },
+                            "SeasonType": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 1
+                                    },
+                                    "min": {
+                                        "value": 1
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 1,
+                                        "value": 1
+                                    },
+                                    "min": {
+                                        "measure": 1,
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            "PlayerID": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 13320
+                                    },
+                                    "min": {
+                                        "value": 13320
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 5,
+                                        "value": 13320
+                                    },
+                                    "min": {
+                                        "measure": 5,
+                                        "value": 13320
+                                    }
+                                }
+                            },
+                            "Team": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 3,
+                                        "value": "CAR"
+                                    },
+                                    "min": {
+                                        "measure": 3,
+                                        "value": "CAR"
+                                    }
+                                }
+                            },
+                            "Season": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 2015
+                                    },
+                                    "min": {
+                                        "value": 2015
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 4,
+                                        "value": 2015
+                                    },
+                                    "min": {
+                                        "measure": 4,
+                                        "value": 2015
+                                    }
+                                }
+                            },
+                            "Week": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 17
+                                    },
+                                    "min": {
+                                        "value": 1
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 2,
+                                        "value": 10
+                                    },
+                                    "min": {
+                                        "measure": 1,
+                                        "value": 1
+                                    }
+                                }
+                            },
+                            "ScoringType": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 16,
+                                        "value": "PassingTouchdown"
+                                    },
+                                    "min": {
+                                        "measure": 16,
+                                        "value": "PassingTouchdown"
+                                    }
+                                }
+                            },
+                            "Length": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 83
+                                    },
+                                    "min": {
+                                        "value": 1
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 2,
+                                        "value": 28
+                                    },
+                                    "min": {
+                                        "measure": 1,
+                                        "value": 7
+                                    }
+                                }
+                            },
+                            "ScoringDetailID": {
+                                "unique": 1,
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 449339
+                                    },
+                                    "min": {
+                                        "value": 439149
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 6,
+                                        "value": 439149
+                                    },
+                                    "min": {
+                                        "measure": 6,
+                                        "value": 439149
+                                    }
+                                }
+                            },
+                            "PlayerGameID": {
+                                "count": {
+                                    "max": {
+                                        "measure": 1
+                                    },
+                                    "min": {
+                                        "measure": 1
+                                    }
+                                },
+                                "int": {
+                                    "max": {
+                                        "value": 15325558
+                                    },
+                                    "min": {
+                                        "value": 14454548
+                                    }
+                                },
+                                "varchar": {
+                                    "max": {
+                                        "measure": 8,
+                                        "value": 14454548
+                                    },
+                                    "min": {
+                                        "measure": 8,
+                                        "value": 14454548
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
