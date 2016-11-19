@@ -1,44 +1,29 @@
 <?php
+require __DIR__.'/../vendor/autoload.php';
 
-require __DIR__.'/vendor/autoload.php';
-use jpuck\etl\Data\JSON;
+use jpuck\etl\Sources\REST;
+use jpuck\etl\Data\XML;
+use jpuck\phpdev\Functions as jp;
 
 $credentials = [
-	'db' => [
-		'server'   => 'msenterprise.waltoncollege.uark.edu',
-		'database' => 'teamawesome',
-		'username' => 'teamawesomeapi',
-		'password' => 'P@55w0rd',
-	],
 	'rest' => [
-		'url' => 'https://api.fantasydata.net/v3/nfl/stats/JSON/',
-		'key' => 'api_key',
-		'username' => 'user',
-		'password' => 'P@55',
+		'url' => 'https://api.fantasydata.net/v3/nfl/stats/XML/',
+		'headers' => [
+			'Ocp-Apim-Subscription-Key' => 'super secret access key',
+		],
 	],
 ];
 
 // overwrite with real
-require __DIR__.'/credentials.php';
+require __DIR__.'/../credentials/credentials.php';
 
-// $source = new REST($credentials['rest']);
-// 
-// $endpoint = 'SeasonLeagueLeaders/2015/ALL/FantasyPoints';
-// 
-// $json = $source->fetch($endpoint, JSON::class);
-// 
-// file_put_contents('data.json', $json->raw());
-// file_put_contents('data.schema.json', $json->schema());
+$data = realpath(__DIR__.'/../data');
 
-$dir = __DIR__.'/data/SeasonLeagueLeaders-2015-ALL-FantasyPoints';
+$source = new REST($credentials['rest']);
 
-$data = "$dir/data.json";
+$endpoint = 'SeasonLeagueLeaders/2015/ALL/FantasyPoints';
 
-$json = json_decode(file_get_contents($data));
+$xml = $source->fetch($endpoint, XML::class);
 
-$json = new JSON(json_encode($json[0]));
-
-file_put_contents("$dir/schema.json", $json->schema());
-
-// $json = file_get_contents(__DIR__.'/data/SeasonLeagueLeaders-2015-ALL-FantasyPoints/raw.txt');
-
+jp::file_put_contents("$data/$endpoint/data.xml", $xml->raw());
+jp::file_put_contents("$data/$endpoint/schema.json", $xml->schema());
