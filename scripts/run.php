@@ -1,9 +1,6 @@
 <?php
-require __DIR__.'/../vendor/autoload.php';
 
-use jpuck\etl\Sources\REST;
-use jpuck\etl\Data\XML;
-use jpuck\phpdev\Functions as jp;
+$endpoint = 'SeasonLeagueLeaders/2015/ALL/FantasyPoints';
 
 $credentials = [
 	'rest' => [
@@ -17,13 +14,26 @@ $credentials = [
 // overwrite with real
 require __DIR__.'/../credentials/credentials.php';
 
+require __DIR__.'/../vendor/autoload.php';
+
+use jpuck\etl\Sources\REST;
+use jpuck\etl\Data\XML;
+use jpuck\etl\Sources\DBMS\MicrosoftSQLServer;
+use jpuck\phpdev\Functions as jp;
+
 $data = realpath(__DIR__.'/../data');
 
 $source = new REST($credentials['rest']);
-
-$endpoint = 'SeasonLeagueLeaders/2015/ALL/FantasyPoints';
+$db = new MicrosoftSQLServer(null,['stage' => false]);
 
 $xml = $source->fetch($endpoint, XML::class);
 
-jp::file_put_contents("$data/$endpoint/data.xml", $xml->raw());
-jp::file_put_contents("$data/$endpoint/schema.json", $xml->schema());
+$output = [
+	'data.xml'    => $xml->raw(),
+	'schema.json' => $xml->schema(),
+	'ddl.sql'     => $db->generate($xml->schema()),
+];
+
+foreach($output as $file => $content){
+	jp::file_put_contents("$data/$endpoint/$file", $content);
+}
