@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "087093dc79f580f97bce860ee92ff51b",
-    "content-hash": "a3337e99382640107892ab9b5cca832c",
+    "hash": "d689296b819c7bec9b7b74e5de8ac94c",
+    "content-hash": "7794976c9bf657a2703a919762a63feb",
     "packages": [
         {
             "name": "jpuck/etl",
-            "version": "0.6.0",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jpuck/etl.git",
-                "reference": "ecfe27ef21b6f06f42340f0960e18457f95f51c0"
+                "reference": "e5c6842e3b6fbd4925c66bca24b5aa757c10f42f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jpuck/etl/zipball/ecfe27ef21b6f06f42340f0960e18457f95f51c0",
-                "reference": "ecfe27ef21b6f06f42340f0960e18457f95f51c0",
+                "url": "https://api.github.com/repos/jpuck/etl/zipball/e5c6842e3b6fbd4925c66bca24b5aa757c10f42f",
+                "reference": "e5c6842e3b6fbd4925c66bca24b5aa757c10f42f",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                 }
             ],
             "description": "Tools for extract, transform, and load processes.",
-            "time": "2016-11-02 14:50:20"
+            "time": "2016-11-19 22:08:41"
         },
         {
             "name": "jpuck/phpdev",
@@ -208,7 +208,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "jpuck/etl": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
