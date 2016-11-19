@@ -6,4 +6,4 @@ which position to draft first.
 
 using previous weeks cumulative, what would be the current prediction for points?
 
-
+team cumulative stats
