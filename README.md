@@ -9,3 +9,9 @@ which position to draft first.
 using previous weeks cumulative, what would be the current prediction for points?
 
 team cumulative stats
+
+# References
+
+[Data Dictionary][1]
+
+[1]:https://fantasydata.com/resources/data-dictionary.aspx?league=nflv3
