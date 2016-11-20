@@ -1,3 +1,5 @@
+# Notes
+
 target_variable = player fantasy_points for a week given previous weeks
 who is going to score the most fantasy points?
 
