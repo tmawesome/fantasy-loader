@@ -1,361 +1,201 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
-SELECT
-	 p.[GameKey]
-	,p.[BlockedKickReturnTouchdowns]
-	,p.[Stadium]
-	,p.[FantasyPoints]
-	,p.[FantasyPosition]
-	,p.[FieldGoalPercentage]
-	,p.[PlayerGameID]
-	,p.[FumblesOwnRecoveries]
-	,p.[FumblesOutOfBounds]
-	,p.[ExtraPointsAttempted]
-	,p.[FieldGoalReturnTouchdowns]
-	,p.[Safeties]
-	,p.[FieldGoalsHadBlocked]
-	,p.[PuntsHadBlocked]
-	,p.[ExtraPointsHadBlocked]
-	,p.[PuntLong]
-	,p.[PuntLongnil]
-	,p.[FieldGoalReturnYards]
-	,p.[PuntNetAverage]
-	,p.[KickReturnFairCatches]
-	,p.[ShortName]
-	,p.[Touchdowns]
-	,p.[SafetiesAllowed]
-	,p.[TwoPointConversionReceptions]
-	,p.[BlockedKickReturnYards]
-	,p.[PuntNetYards]
-	,p.[SpecialTeamsFumblesForced]
-	,p.[SpecialTeamsFumblesRecovered]
-	,p.[MiscFumblesForced]
-	,p.[FantasyPointsPPR]
-	,p.[MiscFumblesRecovered]
-	,p.[ReceptionPercentage]
-	,p.[ReceivingYardsPerTarget]
-	,p.[Tackles]
-	,p.[OffensiveTouchdowns]
-	,p.[DefensiveTouchdowns]
-	,p.[SpecialTeamsTouchdowns]
-	,p.[PuntInside20]
-	,p.[IsGameOver]
-	,p.[PuntReturnFairCatches]
-	,p.[PlayingSurface]
-	,p.[PlayingSurfacenil]
-	,p.[DraftKingsPosition]
-	,p.[YahooSalary]
-	,p.[YahooSalarynil]
-	,p.[FantasyPointsYahoo]
-	,p.[InjuryStatus]
-	,p.[InjuryBodyPart]
-	,p.[InjuryStartDate]
-	,p.[InjuryNotes]
-	,p.[FanDuelPosition]
-	,p.[YahooPosition]
-	,p.[FieldGoalsMade50Plus]
-	,p.[OpponentRank]
-	,p.[OpponentRanknil]
-	,p.[OpponentPositionRank]
-	,p.[OpponentPositionRanknil]
-	,p.[InjuryPractice]
-	,p.[InjuryPracticenil]
-	,p.[InjuryPracticeDescription]
-	,p.[InjuryPracticeDescriptionnil]
-	,p.[DeclaredInactive]
-	,p.[FantasyDraftSalary]
-	,p.[FantasyDraftSalarynil]
-	,p.[FantasyDraftPosition]
-	,p.[FantasyDraftPositionnil]
-	,p.[FantasyPointsDraftKings]
-	,p.[FieldGoalsMade40to49]
-	,p.[Temperature]
-	,p.[SpecialTeamsSnapsPlayed]
-	,p.[SpecialTeamsSnapsPlayednil]
-	,p.[Humidity]
-	,p.[WindSpeed]
-	,p.[FanDuelSalary]
-	,p.[FanDuelSalarynil]
-	,p.[DraftKingsSalary]
-	,p.[DraftKingsSalarynil]
-	,p.[FantasyDataSalary]
-	,p.[FantasyDataSalarynil]
-	,p.[OffensiveSnapsPlayed]
-	,p.[OffensiveSnapsPlayednil]
-	,p.[DefensiveSnapsPlayed]
-	,p.[DefensiveSnapsPlayednil]
-	,p.[OffensiveTeamSnaps]
-	,p.[OffensiveTeamSnapsnil]
-	,p.[FieldGoalsMade30to39]
-	,p.[DefensiveTeamSnaps]
-	,p.[DefensiveTeamSnapsnil]
-	,p.[SpecialTeamsTeamSnaps]
-	,p.[SpecialTeamsTeamSnapsnil]
-	,p.[VictivSalary]
-	,p.[VictivSalarynil]
-	,p.[TwoPointConversionReturns]
-	,p.[FantasyPointsFanDuel]
-	,p.[FieldGoalsMade0to19]
-	,p.[FieldGoalsMade20to29]
-	,p.[PuntTouchbacks]
-	,p.[TwoPointConversionRuns]
-	,p.[PassingCompletions]
-	,p.[PassingYardsPerCompletion]
-	,p.[Fumbles]
-	,p.[PlayerID]
-	,p.[Name]
-	,p.[Position]
-	,p.[PositionCategory]
-	,p.[Activated]
-	,p.[Played]
-	,p.[PassingYardsPerAttempt]
-	,p.[PassingTouchdowns]
-	,p.[PassingInterceptions]
-	,p.[PassingRating]
-	,p.[PassingLong]
-	,p.[PassingSacks]
-	,p.[PassingSackYards]
-	,p.[RushingYards]
-	,p.[PassingCompletionPercentage]
-	,p.[Started]
-	,p.[ReceivingYards]
-	,p.[Number]
-	,p.[ReceivingLong]
-	,p.[TwoPointConversionPasses]
-	,p.[RushingAttempts]
-	,p.[RushingYardsPerAttempt]
-	,p.[RushingTouchdowns]
-	,p.[RushingLong]
-	,p.[ReceivingTargets]
-	,p.[SeasonType]
-	,p.[Receptions]
-	,p.[Season]
-	,p.[GameDate]
-	,p.[Week]
-	,p.[Team]
-	,p.[Opponent]
-	,p.[HomeOrAway]
-	,p.[PassingYards]
-	,p.[ReceivingTouchdowns]
-	,p.[PassingAttempts]
-	,p.[ReceivingYardsPerReception]
-	,p.[MiscSoloTackles]
-	,p.[FumbleReturnTouchdowns]
-	,p.[Interceptions]
-	,p.[InterceptionReturnYards]
-	,p.[InterceptionReturnTouchdowns]
-	,p.[BlockedKicks]
-	,p.[SpecialTeamsSoloTackles]
-	,p.[SpecialTeamsAssistedTackles]
-	,p.[MiscAssistedTackles]
-	,p.[FumblesRecovered]
-	,p.[Punts]
-	,p.[PuntYards]
-	,p.[PuntAverage]
-	,p.[FieldGoalsAttempted]
-	,p.[FieldGoalsMade]
-	,p.[FieldGoalsLongestMade]
-	,p.[ExtraPointsMade]
-	,p.[FumbleReturnYards]
-	,p.[FumblesForced]
-	,p.[FumblesLost]
-	,p.[KickReturnYardsPerAttempt]
-	,p.[PuntReturns]
-	,p.[PuntReturnYards]
-	,p.[PuntReturnYardsPerAttempt]
-	,p.[PuntReturnTouchdowns]
-	,p.[PuntReturnLong]
-	,p.[KickReturns]
-	,p.[KickReturnYards]
-	,p.[KickReturnTouchdowns]
-	,p.[PassesDefended]
-	,p.[KickReturnLong]
-	,p.[SoloTackles]
-	,p.[AssistedTackles]
-	,p.[TacklesForLoss]
-	,p.[Sacks]
-	,p.[SackYards]
-	,p.[QuarterbackHits],
-
-	COUNT(ScoringType) AS 'ScoringTypeCount',
-	AVG(Length) AS 'LengthAverage',
-	MIN(Length) AS 'LengthMin',
-	MAX(Length) AS 'LengthMax'
+SELECT *
 FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGame] p
-LEFT JOIN [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail] d
-  ON p.[jpetl_id] = d.[jpetl_idfk]
-GROUP BY
-	 p.[GameKey]
-	,p.[BlockedKickReturnTouchdowns]
-	,p.[Stadium]
-	,p.[FantasyPoints]
-	,p.[FantasyPosition]
-	,p.[FieldGoalPercentage]
-	,p.[PlayerGameID]
-	,p.[FumblesOwnRecoveries]
-	,p.[FumblesOutOfBounds]
-	,p.[ExtraPointsAttempted]
-	,p.[FieldGoalReturnTouchdowns]
-	,p.[Safeties]
-	,p.[FieldGoalsHadBlocked]
-	,p.[PuntsHadBlocked]
-	,p.[ExtraPointsHadBlocked]
-	,p.[PuntLong]
-	,p.[PuntLongnil]
-	,p.[FieldGoalReturnYards]
-	,p.[PuntNetAverage]
-	,p.[KickReturnFairCatches]
-	,p.[ShortName]
-	,p.[Touchdowns]
-	,p.[SafetiesAllowed]
-	,p.[TwoPointConversionReceptions]
-	,p.[BlockedKickReturnYards]
-	,p.[PuntNetYards]
-	,p.[SpecialTeamsFumblesForced]
-	,p.[SpecialTeamsFumblesRecovered]
-	,p.[MiscFumblesForced]
-	,p.[FantasyPointsPPR]
-	,p.[MiscFumblesRecovered]
-	,p.[ReceptionPercentage]
-	,p.[ReceivingYardsPerTarget]
-	,p.[Tackles]
-	,p.[OffensiveTouchdowns]
-	,p.[DefensiveTouchdowns]
-	,p.[SpecialTeamsTouchdowns]
-	,p.[PuntInside20]
-	,p.[IsGameOver]
-	,p.[PuntReturnFairCatches]
-	,p.[PlayingSurface]
-	,p.[PlayingSurfacenil]
-	,p.[DraftKingsPosition]
-	,p.[YahooSalary]
-	,p.[YahooSalarynil]
-	,p.[FantasyPointsYahoo]
-	,p.[InjuryStatus]
-	,p.[InjuryBodyPart]
-	,p.[InjuryStartDate]
-	,p.[InjuryNotes]
-	,p.[FanDuelPosition]
-	,p.[YahooPosition]
-	,p.[FieldGoalsMade50Plus]
-	,p.[OpponentRank]
-	,p.[OpponentRanknil]
-	,p.[OpponentPositionRank]
-	,p.[OpponentPositionRanknil]
-	,p.[InjuryPractice]
-	,p.[InjuryPracticenil]
-	,p.[InjuryPracticeDescription]
-	,p.[InjuryPracticeDescriptionnil]
-	,p.[DeclaredInactive]
-	,p.[FantasyDraftSalary]
-	,p.[FantasyDraftSalarynil]
-	,p.[FantasyDraftPosition]
-	,p.[FantasyDraftPositionnil]
-	,p.[FantasyPointsDraftKings]
-	,p.[FieldGoalsMade40to49]
-	,p.[Temperature]
-	,p.[SpecialTeamsSnapsPlayed]
-	,p.[SpecialTeamsSnapsPlayednil]
-	,p.[Humidity]
-	,p.[WindSpeed]
-	,p.[FanDuelSalary]
-	,p.[FanDuelSalarynil]
-	,p.[DraftKingsSalary]
-	,p.[DraftKingsSalarynil]
-	,p.[FantasyDataSalary]
-	,p.[FantasyDataSalarynil]
-	,p.[OffensiveSnapsPlayed]
-	,p.[OffensiveSnapsPlayednil]
-	,p.[DefensiveSnapsPlayed]
-	,p.[DefensiveSnapsPlayednil]
-	,p.[OffensiveTeamSnaps]
-	,p.[OffensiveTeamSnapsnil]
-	,p.[FieldGoalsMade30to39]
-	,p.[DefensiveTeamSnaps]
-	,p.[DefensiveTeamSnapsnil]
-	,p.[SpecialTeamsTeamSnaps]
-	,p.[SpecialTeamsTeamSnapsnil]
-	,p.[VictivSalary]
-	,p.[VictivSalarynil]
-	,p.[TwoPointConversionReturns]
-	,p.[FantasyPointsFanDuel]
-	,p.[FieldGoalsMade0to19]
-	,p.[FieldGoalsMade20to29]
-	,p.[PuntTouchbacks]
-	,p.[TwoPointConversionRuns]
-	,p.[PassingCompletions]
-	,p.[PassingYardsPerCompletion]
-	,p.[Fumbles]
-	,p.[PlayerID]
-	,p.[Name]
-	,p.[Position]
-	,p.[PositionCategory]
-	,p.[Activated]
-	,p.[Played]
-	,p.[PassingYardsPerAttempt]
-	,p.[PassingTouchdowns]
-	,p.[PassingInterceptions]
-	,p.[PassingRating]
-	,p.[PassingLong]
-	,p.[PassingSacks]
-	,p.[PassingSackYards]
-	,p.[RushingYards]
-	,p.[PassingCompletionPercentage]
-	,p.[Started]
-	,p.[ReceivingYards]
-	,p.[Number]
-	,p.[ReceivingLong]
-	,p.[TwoPointConversionPasses]
-	,p.[RushingAttempts]
-	,p.[RushingYardsPerAttempt]
-	,p.[RushingTouchdowns]
-	,p.[RushingLong]
-	,p.[ReceivingTargets]
-	,p.[SeasonType]
-	,p.[Receptions]
-	,p.[Season]
-	,p.[GameDate]
-	,p.[Week]
-	,p.[Team]
-	,p.[Opponent]
-	,p.[HomeOrAway]
-	,p.[PassingYards]
-	,p.[ReceivingTouchdowns]
-	,p.[PassingAttempts]
-	,p.[ReceivingYardsPerReception]
-	,p.[MiscSoloTackles]
-	,p.[FumbleReturnTouchdowns]
-	,p.[Interceptions]
-	,p.[InterceptionReturnYards]
-	,p.[InterceptionReturnTouchdowns]
-	,p.[BlockedKicks]
-	,p.[SpecialTeamsSoloTackles]
-	,p.[SpecialTeamsAssistedTackles]
-	,p.[MiscAssistedTackles]
-	,p.[FumblesRecovered]
-	,p.[Punts]
-	,p.[PuntYards]
-	,p.[PuntAverage]
-	,p.[FieldGoalsAttempted]
-	,p.[FieldGoalsMade]
-	,p.[FieldGoalsLongestMade]
-	,p.[ExtraPointsMade]
-	,p.[FumbleReturnYards]
-	,p.[FumblesForced]
-	,p.[FumblesLost]
-	,p.[KickReturnYardsPerAttempt]
-	,p.[PuntReturns]
-	,p.[PuntReturnYards]
-	,p.[PuntReturnYardsPerAttempt]
-	,p.[PuntReturnTouchdowns]
-	,p.[PuntReturnLong]
-	,p.[KickReturns]
-	,p.[KickReturnYards]
-	,p.[KickReturnTouchdowns]
-	,p.[PassesDefended]
-	,p.[KickReturnLong]
-	,p.[SoloTackles]
-	,p.[AssistedTackles]
-	,p.[TacklesForLoss]
-	,p.[Sacks]
-	,p.[SackYards]
-	,p.[QuarterbackHits]
+FULL JOIN (
+	SELECT a.jpetl_idfk AS 'jpetl_idfkd',
+		ScoringCountsAll,
+		ScoringLenAvgAll,
+		ScoringLenMinAll,
+		ScoringLenMaxAll,
+		ScoringCountsRushingTouchdown,
+		ScoringLenAvgRushingTouchdown,
+		ScoringLenMinRushingTouchdown,
+		ScoringLenMaxRushingTouchdown,
+		ScoringCountsBlockedFieldGoalReturnTouchdown,
+		ScoringLenAvgBlockedFieldGoalReturnTouchdown,
+		ScoringLenMinBlockedFieldGoalReturnTouchdown,
+		ScoringLenMaxBlockedFieldGoalReturnTouchdown,
+		ScoringCountsBlockedPuntReturnTouchdown,
+		ScoringLenAvgBlockedPuntReturnTouchdown,
+		ScoringLenMinBlockedPuntReturnTouchdown,
+		ScoringLenMaxBlockedPuntReturnTouchdown,
+		ScoringCountsSafety,
+		ScoringLenAvgSafety,
+		ScoringLenMinSafety,
+		ScoringLenMaxSafety,
+		ScoringCountsFumbleReturnTouchdown,
+		ScoringLenAvgFumbleReturnTouchdown,
+		ScoringLenMinFumbleReturnTouchdown,
+		ScoringLenMaxFumbleReturnTouchdown,
+		ScoringCountsFieldGoalMissed,
+		ScoringLenAvgFieldGoalMissed,
+		ScoringLenMinFieldGoalMissed,
+		ScoringLenMaxFieldGoalMissed,
+		ScoringCountsExtraPointReturn,
+		ScoringLenAvgExtraPointReturn,
+		ScoringLenMinExtraPointReturn,
+		ScoringLenMaxExtraPointReturn,
+		ScoringCountsKickoffReturnTouchdown,
+		ScoringLenAvgKickoffReturnTouchdown,
+		ScoringLenMinKickoffReturnTouchdown,
+		ScoringLenMaxKickoffReturnTouchdown,
+		ScoringCountsPassingTouchdown,
+		ScoringLenAvgPassingTouchdown,
+		ScoringLenMinPassingTouchdown,
+		ScoringLenMaxPassingTouchdown,
+		ScoringCountsInterceptionReturnTouchdown,
+		ScoringLenAvgInterceptionReturnTouchdown,
+		ScoringLenMinInterceptionReturnTouchdown,
+		ScoringLenMaxInterceptionReturnTouchdown,
+		ScoringCountsReceivingTouchdown,
+		ScoringLenAvgReceivingTouchdown,
+		ScoringLenMinReceivingTouchdown,
+		ScoringLenMaxReceivingTouchdown,
+		ScoringCountsFieldGoalMade,
+		ScoringLenAvgFieldGoalMade,
+		ScoringLenMinFieldGoalMade,
+		ScoringLenMaxFieldGoalMade,
+		ScoringCountsPuntReturnTouchdown,
+		ScoringLenAvgPuntReturnTouchdown,
+		ScoringLenMinPuntReturnTouchdown,
+		ScoringLenMaxPuntReturnTouchdown
+	FROM (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsAll',
+			AVG(Length)     AS 'ScoringLenAvgAll',
+			MIN(Length)     AS 'ScoringLenMinAll',
+			MAX(Length)     AS 'ScoringLenMaxAll'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		GROUP BY jpetl_idfk
+	) a
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsRushingTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgRushingTouchdown',
+			MIN(Length)     AS 'ScoringLenMinRushingTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxRushingTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'RushingTouchdown'
+		GROUP BY jpetl_idfk
+	) RushingTouchdown ON a.jpetl_idfk = RushingTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsBlockedFieldGoalReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgBlockedFieldGoalReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinBlockedFieldGoalReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxBlockedFieldGoalReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'BlockedFieldGoalReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) BlockedFieldGoalReturnTouchdown ON a.jpetl_idfk = BlockedFieldGoalReturnTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsBlockedPuntReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgBlockedPuntReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinBlockedPuntReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxBlockedPuntReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'BlockedPuntReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) BlockedPuntReturnTouchdown ON a.jpetl_idfk = BlockedPuntReturnTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsSafety',
+			AVG(Length)     AS 'ScoringLenAvgSafety',
+			MIN(Length)     AS 'ScoringLenMinSafety',
+			MAX(Length)     AS 'ScoringLenMaxSafety'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'Safety'
+		GROUP BY jpetl_idfk
+	) Safety ON a.jpetl_idfk = Safety.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsFumbleReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgFumbleReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinFumbleReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxFumbleReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'FumbleReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) FumbleReturnTouchdown ON a.jpetl_idfk = FumbleReturnTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsFieldGoalMissed',
+			AVG(Length)     AS 'ScoringLenAvgFieldGoalMissed',
+			MIN(Length)     AS 'ScoringLenMinFieldGoalMissed',
+			MAX(Length)     AS 'ScoringLenMaxFieldGoalMissed'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'FieldGoalMissed'
+		GROUP BY jpetl_idfk
+	) FieldGoalMissed ON a.jpetl_idfk = FieldGoalMissed.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsExtraPointReturn',
+			AVG(Length)     AS 'ScoringLenAvgExtraPointReturn',
+			MIN(Length)     AS 'ScoringLenMinExtraPointReturn',
+			MAX(Length)     AS 'ScoringLenMaxExtraPointReturn'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'ExtraPointReturn'
+		GROUP BY jpetl_idfk
+	) ExtraPointReturn ON a.jpetl_idfk = ExtraPointReturn.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsKickoffReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgKickoffReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinKickoffReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxKickoffReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'KickoffReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) KickoffReturnTouchdown ON a.jpetl_idfk = KickoffReturnTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsPassingTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgPassingTouchdown',
+			MIN(Length)     AS 'ScoringLenMinPassingTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxPassingTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'PassingTouchdown'
+		GROUP BY jpetl_idfk
+	) PassingTouchdown ON a.jpetl_idfk = PassingTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsInterceptionReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgInterceptionReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinInterceptionReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxInterceptionReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'InterceptionReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) InterceptionReturnTouchdown ON a.jpetl_idfk = InterceptionReturnTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsReceivingTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgReceivingTouchdown',
+			MIN(Length)     AS 'ScoringLenMinReceivingTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxReceivingTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'ReceivingTouchdown'
+		GROUP BY jpetl_idfk
+	) ReceivingTouchdown ON a.jpetl_idfk = ReceivingTouchdown.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsFieldGoalMade',
+			AVG(Length)     AS 'ScoringLenAvgFieldGoalMade',
+			MIN(Length)     AS 'ScoringLenMinFieldGoalMade',
+			MAX(Length)     AS 'ScoringLenMaxFieldGoalMade'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'FieldGoalMade'
+		GROUP BY jpetl_idfk
+	) FieldGoalMade ON a.jpetl_idfk = FieldGoalMade.jpetl_idfk
+	FULL JOIN (
+		SELECT jpetl_idfk,
+			COUNT(jpetl_id) AS 'ScoringCountsPuntReturnTouchdown',
+			AVG(Length)     AS 'ScoringLenAvgPuntReturnTouchdown',
+			MIN(Length)     AS 'ScoringLenMinPuntReturnTouchdown',
+			MAX(Length)     AS 'ScoringLenMaxPuntReturnTouchdown'
+		FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		WHERE ScoringType = 'PuntReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) PuntReturnTouchdown ON a.jpetl_idfk = PuntReturnTouchdown.jpetl_idfk
+) d ON p.[jpetl_id] = d.[jpetl_idfkd]
