@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "087093dc79f580f97bce860ee92ff51b",
-    "content-hash": "a3337e99382640107892ab9b5cca832c",
+    "hash": "e389b8e9d08043668712d15bb9667bc7",
+    "content-hash": "8e967a7388ea9214c91863ac254f6096",
     "packages": [
         {
             "name": "jpuck/etl",
-            "version": "0.6.0",
+            "version": "dev-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jpuck/etl.git",
-                "reference": "ecfe27ef21b6f06f42340f0960e18457f95f51c0"
+                "reference": "e5c6842e3b6fbd4925c66bca24b5aa757c10f42f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jpuck/etl/zipball/ecfe27ef21b6f06f42340f0960e18457f95f51c0",
-                "reference": "ecfe27ef21b6f06f42340f0960e18457f95f51c0",
+                "url": "https://api.github.com/repos/jpuck/etl/zipball/e5c6842e3b6fbd4925c66bca24b5aa757c10f42f",
+                "reference": "e5c6842e3b6fbd4925c66bca24b5aa757c10f42f",
                 "shasum": ""
             },
             "require": {
@@ -49,20 +49,20 @@
                 }
             ],
             "description": "Tools for extract, transform, and load processes.",
-            "time": "2016-11-02 14:50:20"
+            "time": "2016-11-19 22:08:41"
         },
         {
             "name": "jpuck/phpdev",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jpuck/phpdev.git",
-                "reference": "69b9fc16eaf20d5306678fa69f1df808544de217"
+                "reference": "0c689a031126b8e7f425c6db49e7236c264184be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jpuck/phpdev/zipball/69b9fc16eaf20d5306678fa69f1df808544de217",
-                "reference": "69b9fc16eaf20d5306678fa69f1df808544de217",
+                "url": "https://api.github.com/repos/jpuck/phpdev/zipball/0c689a031126b8e7f425c6db49e7236c264184be",
+                "reference": "0c689a031126b8e7f425c6db49e7236c264184be",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 }
             ],
             "description": "A collection of classes useful for code under construction.",
-            "time": "2016-10-16 20:40:05"
+            "time": "2016-11-19 23:20:47"
         },
         {
             "name": "sabre/uri",
@@ -208,7 +208,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "jpuck/etl": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

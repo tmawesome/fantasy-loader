@@ -1,5 +1,6 @@
 {
     "require": {
-        "jpuck/etl": "^0.6.0"
+        "jpuck/etl": "dev-dev",
+        "jpuck/phpdev": "^1.5"
     }
 }
