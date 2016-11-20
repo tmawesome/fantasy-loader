@@ -22,6 +22,7 @@ require __DIR__.'/../vendor/autoload.php';
 use jpuck\etl\Sources\Folder;
 use jpuck\etl\Sources\REST;
 use jpuck\etl\Data\XML;
+use jpuck\etl\Schemata\Schema;
 use jpuck\etl\Schemata\Merger;
 use jpuck\etl\Sources\DBMS\MicrosoftSQLServer;
 use jpuck\phpdev\Functions as jp;
@@ -32,26 +33,40 @@ $source = new REST($credentials['rest']);
 $merger = new Merger;
 $db = new MicrosoftSQLServer($pdo,['stage' => false]);
 
-// fetch xml and generate schema
-for($week = 1; $week <= $weeks; $week++){
-	echo "fetching week $week\n";
-	$xml = $source->fetch("$endpoint/$week", XML::class);
-
-	jp::file_put_contents("$data/$endpoint/$week.data.xml", $xml->raw());
-
-	// merge schemas
-	if(empty($schema)){
-		$schema = $xml->schema();
-	} else {
-		$schema = $merger->merge($schema, $xml->schema());
+// check first if we've already done this
+if(file_exists("$data/$endpoint/schema.json")){
+	$schema = new Schema(file_get_contents("$data/$endpoint/schema.json"));
+	for($week = 1; $week <= $weeks; $week++){
+		if(!file_exists("$data/$endpoint/$week.data.xml")){
+			$data_exists = false;
+			break;
+		}
+		$data_exists = true;
 	}
 }
-jp::file_put_contents("$data/$endpoint/schema.json", $schema);
 
-// create database tables
-$ddl = $db->generate($schema);
-jp::file_put_contents("$data/$endpoint/ddl.sql", $ddl);
-$pdo->exec($ddl);
+// fetch xml and generate schema
+if(empty($data_exists)){
+	for($week = 1; $week <= $weeks; $week++){
+		echo "fetching week $week\n";
+		$xml = $source->fetch("$endpoint/$week", XML::class);
+
+		jp::file_put_contents("$data/$endpoint/$week.data.xml", $xml->raw());
+
+		// merge schemas
+		if(empty($schema)){
+			$schema = $xml->schema();
+		} else {
+			$schema = $merger->merge($schema, $xml->schema());
+		}
+	}
+	jp::file_put_contents("$data/$endpoint/schema.json", $schema);
+
+	// create database tables
+	$ddl = $db->generate($schema);
+	jp::file_put_contents("$data/$endpoint/ddl.sql", $ddl);
+	$pdo->exec($ddl);
+}
 
 // insert data
 $folder = new Folder(['path'=>"$data/$endpoint"]);
