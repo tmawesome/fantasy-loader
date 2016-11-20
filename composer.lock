@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e389b8e9d08043668712d15bb9667bc7",
-    "content-hash": "8e967a7388ea9214c91863ac254f6096",
+    "hash": "08b840304470addd6fd1d80f8689f1a2",
+    "content-hash": "ba09aa116b3073fa5cd3eba0e90e4d1b",
     "packages": [
         {
             "name": "jpuck/etl",
-            "version": "dev-dev",
+            "version": "0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jpuck/etl.git",
@@ -208,9 +208,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "jpuck/etl": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

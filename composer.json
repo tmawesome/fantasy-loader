@@ -1,6 +1,6 @@
 {
     "require": {
-        "jpuck/etl": "dev-dev",
+        "jpuck/etl": "^0.7.0",
         "jpuck/phpdev": "^1.5"
     },
     "license": "GPL-3.0+"
