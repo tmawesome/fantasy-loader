@@ -1,5 +1,10 @@
 /****** Script for SelectTopNRows command from SSMS  ******/
-SELECT *
+SELECT *, (
+	SELECT FantasyPoints
+	FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGame] s
+	WHERE s.week = p.week + 1
+	  AND s.PlayerID = p.PlayerID
+) AS 'FantasyPointsNextWeek'
 FROM [tmptmawesome].[dbo].[ArrayOfPlayerGamePlayerGame] p
 FULL JOIN (
 	SELECT a.jpetl_idfk AS 'jpetl_idfkd',
