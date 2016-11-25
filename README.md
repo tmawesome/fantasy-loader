@@ -26,10 +26,11 @@ using many derived tables and correlated subqueries from the data contained in
 Each Scoring Type is aggregated for count, minimum, maximum, and average. The
 columns are conventionally named as such:
 
-- `ScoringCountsScoringType`
-- `ScoringLenMinScoringType`
-- `ScoringLenMaxScoringType`
-- `ScoringLenAvgScoringType`
+- `ScoringScoringTypeCOUNT`
+- `ScoringScoringTypeMIN`
+- `ScoringScoringTypeMAX`
+- `ScoringScoringTypeAVG`
+- `ScoringScoringTypeSUM`
 
 Finally, the target variable `FantasyPointsNextWeek` is given.
 Note that this value is `NULL` for all week 17 records.
