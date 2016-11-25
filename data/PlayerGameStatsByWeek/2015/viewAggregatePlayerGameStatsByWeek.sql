@@ -11,200 +11,297 @@ SELECT *, (
 FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGame] p
 FULL JOIN (
 	SELECT a.jpetl_idfk AS 'jpetl_idfkd',
-		ScoringCountsAll,
-		ScoringLenAvgAll,
-		ScoringLenMinAll,
-		ScoringLenMaxAll,
-		ScoringCountsRushingTouchdown,
-		ScoringLenAvgRushingTouchdown,
-		ScoringLenMinRushingTouchdown,
-		ScoringLenMaxRushingTouchdown,
-		ScoringCountsBlockedFieldGoalReturnTouchdown,
-		ScoringLenAvgBlockedFieldGoalReturnTouchdown,
-		ScoringLenMinBlockedFieldGoalReturnTouchdown,
-		ScoringLenMaxBlockedFieldGoalReturnTouchdown,
-		ScoringCountsBlockedPuntReturnTouchdown,
-		ScoringLenAvgBlockedPuntReturnTouchdown,
-		ScoringLenMinBlockedPuntReturnTouchdown,
-		ScoringLenMaxBlockedPuntReturnTouchdown,
-		ScoringCountsSafety,
-		ScoringLenAvgSafety,
-		ScoringLenMinSafety,
-		ScoringLenMaxSafety,
-		ScoringCountsFumbleReturnTouchdown,
-		ScoringLenAvgFumbleReturnTouchdown,
-		ScoringLenMinFumbleReturnTouchdown,
-		ScoringLenMaxFumbleReturnTouchdown,
-		ScoringCountsFieldGoalMissed,
-		ScoringLenAvgFieldGoalMissed,
-		ScoringLenMinFieldGoalMissed,
-		ScoringLenMaxFieldGoalMissed,
-		ScoringCountsExtraPointReturn,
-		ScoringLenAvgExtraPointReturn,
-		ScoringLenMinExtraPointReturn,
-		ScoringLenMaxExtraPointReturn,
-		ScoringCountsKickoffReturnTouchdown,
-		ScoringLenAvgKickoffReturnTouchdown,
-		ScoringLenMinKickoffReturnTouchdown,
-		ScoringLenMaxKickoffReturnTouchdown,
-		ScoringCountsPassingTouchdown,
-		ScoringLenAvgPassingTouchdown,
-		ScoringLenMinPassingTouchdown,
-		ScoringLenMaxPassingTouchdown,
-		ScoringCountsInterceptionReturnTouchdown,
-		ScoringLenAvgInterceptionReturnTouchdown,
-		ScoringLenMinInterceptionReturnTouchdown,
-		ScoringLenMaxInterceptionReturnTouchdown,
-		ScoringCountsReceivingTouchdown,
-		ScoringLenAvgReceivingTouchdown,
-		ScoringLenMinReceivingTouchdown,
-		ScoringLenMaxReceivingTouchdown,
-		ScoringCountsFieldGoalMade,
-		ScoringLenAvgFieldGoalMade,
-		ScoringLenMinFieldGoalMade,
-		ScoringLenMaxFieldGoalMade,
-		ScoringCountsPuntReturnTouchdown,
-		ScoringLenAvgPuntReturnTouchdown,
-		ScoringLenMinPuntReturnTouchdown,
-		ScoringLenMaxPuntReturnTouchdown
+		ScoringTotalCOUNT,
+		ScoringTotalMIN,
+		ScoringTotalMAX,
+		ScoringTotalAVG,
+		ScoringTotalSUM,
+		ScoringBlockedFieldGoalReturnTouchdownCOUNT,
+		ScoringBlockedFieldGoalReturnTouchdownMIN,
+		ScoringBlockedFieldGoalReturnTouchdownMAX,
+		ScoringBlockedFieldGoalReturnTouchdownAVG,
+		ScoringBlockedFieldGoalReturnTouchdownSUM,
+		ScoringBlockedPuntReturnTouchdownCOUNT,
+		ScoringBlockedPuntReturnTouchdownMIN,
+		ScoringBlockedPuntReturnTouchdownMAX,
+		ScoringBlockedPuntReturnTouchdownAVG,
+		ScoringBlockedPuntReturnTouchdownSUM,
+		ScoringFieldGoalMadeCOUNT,
+		ScoringFieldGoalMadeMIN,
+		ScoringFieldGoalMadeMAX,
+		ScoringFieldGoalMadeAVG,
+		ScoringFieldGoalMadeSUM,
+		ScoringFieldGoalReturnTouchdownCOUNT,
+		ScoringFieldGoalReturnTouchdownMIN,
+		ScoringFieldGoalReturnTouchdownMAX,
+		ScoringFieldGoalReturnTouchdownAVG,
+		ScoringFieldGoalReturnTouchdownSUM,
+		ScoringFumbleReturnTouchdownCOUNT,
+		ScoringFumbleReturnTouchdownMIN,
+		ScoringFumbleReturnTouchdownMAX,
+		ScoringFumbleReturnTouchdownAVG,
+		ScoringFumbleReturnTouchdownSUM,
+		ScoringInterceptionReturnTouchdownCOUNT,
+		ScoringInterceptionReturnTouchdownMIN,
+		ScoringInterceptionReturnTouchdownMAX,
+		ScoringInterceptionReturnTouchdownAVG,
+		ScoringInterceptionReturnTouchdownSUM,
+		ScoringKickoffReturnTouchdownCOUNT,
+		ScoringKickoffReturnTouchdownMIN,
+		ScoringKickoffReturnTouchdownMAX,
+		ScoringKickoffReturnTouchdownAVG,
+		ScoringKickoffReturnTouchdownSUM,
+		ScoringPassingTouchdownCOUNT,
+		ScoringPassingTouchdownMIN,
+		ScoringPassingTouchdownMAX,
+		ScoringPassingTouchdownAVG,
+		ScoringPassingTouchdownSUM,
+		ScoringPuntReturnTouchdownCOUNT,
+		ScoringPuntReturnTouchdownMIN,
+		ScoringPuntReturnTouchdownMAX,
+		ScoringPuntReturnTouchdownAVG,
+		ScoringPuntReturnTouchdownSUM,
+		ScoringReceivingTouchdownCOUNT,
+		ScoringReceivingTouchdownMIN,
+		ScoringReceivingTouchdownMAX,
+		ScoringReceivingTouchdownAVG,
+		ScoringReceivingTouchdownSUM,
+		ScoringRushingTouchdownCOUNT,
+		ScoringRushingTouchdownMIN,
+		ScoringRushingTouchdownMAX,
+		ScoringRushingTouchdownAVG,
+		ScoringRushingTouchdownSUM,
+		ScoringSafetyCOUNT,
+		ScoringSafetyMIN,
+		ScoringSafetyMAX,
+		ScoringSafetyAVG,
+		ScoringSafetySUM
 	FROM (
 		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsAll',
-			AVG(Length)     AS 'ScoringLenAvgAll',
-			MIN(Length)     AS 'ScoringLenMinAll',
-			MAX(Length)     AS 'ScoringLenMaxAll'
+			COUNT(jpetl_id) AS 'ScoringTotalCOUNT',
+			MIN(Length)     AS 'ScoringTotalMIN',
+			MAX(Length)     AS 'ScoringTotalMAX',
+			AVG(Length)     AS 'ScoringTotalAVG',
+			SUM(Length)     AS 'ScoringTotalSUM'
 		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
 		GROUP BY jpetl_idfk
 	) a
+
 	FULL JOIN (
 		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsRushingTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgRushingTouchdown',
-			MIN(Length)     AS 'ScoringLenMinRushingTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxRushingTouchdown'
+				COUNT(Length) AS 'ScoringBlockedFieldGoalReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringBlockedFieldGoalReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringBlockedFieldGoalReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringBlockedFieldGoalReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringBlockedFieldGoalReturnTouchdownSUM',
+			'BlockedFieldGoalReturnTouchdown' as 'ScoringType'
 		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'RushingTouchdown'
-		GROUP BY jpetl_idfk
-	) RushingTouchdown ON a.jpetl_idfk = RushingTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsBlockedFieldGoalReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgBlockedFieldGoalReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinBlockedFieldGoalReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxBlockedFieldGoalReturnTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
 		WHERE ScoringType = 'BlockedFieldGoalReturnTouchdown'
 		GROUP BY jpetl_idfk
 	) BlockedFieldGoalReturnTouchdown ON a.jpetl_idfk = BlockedFieldGoalReturnTouchdown.jpetl_idfk
+	
 	FULL JOIN (
 		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsBlockedPuntReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgBlockedPuntReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinBlockedPuntReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxBlockedPuntReturnTouchdown'
+				COUNT(Length) AS 'ScoringBlockedPuntReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringBlockedPuntReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringBlockedPuntReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringBlockedPuntReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringBlockedPuntReturnTouchdownSUM',
+			'BlockedPuntReturnTouchdown' as 'ScoringType'
 		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
 		WHERE ScoringType = 'BlockedPuntReturnTouchdown'
 		GROUP BY jpetl_idfk
 	) BlockedPuntReturnTouchdown ON a.jpetl_idfk = BlockedPuntReturnTouchdown.jpetl_idfk
+	
 	FULL JOIN (
 		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsSafety',
-			AVG(Length)     AS 'ScoringLenAvgSafety',
-			MIN(Length)     AS 'ScoringLenMinSafety',
-			MAX(Length)     AS 'ScoringLenMaxSafety'
+				COUNT(Length) AS 'ScoringFieldGoalMadeCOUNT',
+			
+				MIN(Length) AS 'ScoringFieldGoalMadeMIN',
+			
+				MAX(Length) AS 'ScoringFieldGoalMadeMAX',
+			
+				AVG(Length) AS 'ScoringFieldGoalMadeAVG',
+			
+				SUM(Length) AS 'ScoringFieldGoalMadeSUM',
+			'FieldGoalMade' as 'ScoringType'
 		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'Safety'
-		GROUP BY jpetl_idfk
-	) Safety ON a.jpetl_idfk = Safety.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsFumbleReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgFumbleReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinFumbleReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxFumbleReturnTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'FumbleReturnTouchdown'
-		GROUP BY jpetl_idfk
-	) FumbleReturnTouchdown ON a.jpetl_idfk = FumbleReturnTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsFieldGoalMissed',
-			AVG(Length)     AS 'ScoringLenAvgFieldGoalMissed',
-			MIN(Length)     AS 'ScoringLenMinFieldGoalMissed',
-			MAX(Length)     AS 'ScoringLenMaxFieldGoalMissed'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'FieldGoalMissed'
-		GROUP BY jpetl_idfk
-	) FieldGoalMissed ON a.jpetl_idfk = FieldGoalMissed.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsExtraPointReturn',
-			AVG(Length)     AS 'ScoringLenAvgExtraPointReturn',
-			MIN(Length)     AS 'ScoringLenMinExtraPointReturn',
-			MAX(Length)     AS 'ScoringLenMaxExtraPointReturn'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'ExtraPointReturn'
-		GROUP BY jpetl_idfk
-	) ExtraPointReturn ON a.jpetl_idfk = ExtraPointReturn.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsKickoffReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgKickoffReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinKickoffReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxKickoffReturnTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'KickoffReturnTouchdown'
-		GROUP BY jpetl_idfk
-	) KickoffReturnTouchdown ON a.jpetl_idfk = KickoffReturnTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsPassingTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgPassingTouchdown',
-			MIN(Length)     AS 'ScoringLenMinPassingTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxPassingTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'PassingTouchdown'
-		GROUP BY jpetl_idfk
-	) PassingTouchdown ON a.jpetl_idfk = PassingTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsInterceptionReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgInterceptionReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinInterceptionReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxInterceptionReturnTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'InterceptionReturnTouchdown'
-		GROUP BY jpetl_idfk
-	) InterceptionReturnTouchdown ON a.jpetl_idfk = InterceptionReturnTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsReceivingTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgReceivingTouchdown',
-			MIN(Length)     AS 'ScoringLenMinReceivingTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxReceivingTouchdown'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
-		WHERE ScoringType = 'ReceivingTouchdown'
-		GROUP BY jpetl_idfk
-	) ReceivingTouchdown ON a.jpetl_idfk = ReceivingTouchdown.jpetl_idfk
-	FULL JOIN (
-		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsFieldGoalMade',
-			AVG(Length)     AS 'ScoringLenAvgFieldGoalMade',
-			MIN(Length)     AS 'ScoringLenMinFieldGoalMade',
-			MAX(Length)     AS 'ScoringLenMaxFieldGoalMade'
-		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
 		WHERE ScoringType = 'FieldGoalMade'
 		GROUP BY jpetl_idfk
 	) FieldGoalMade ON a.jpetl_idfk = FieldGoalMade.jpetl_idfk
+	
 	FULL JOIN (
 		SELECT jpetl_idfk,
-			COUNT(jpetl_id) AS 'ScoringCountsPuntReturnTouchdown',
-			AVG(Length)     AS 'ScoringLenAvgPuntReturnTouchdown',
-			MIN(Length)     AS 'ScoringLenMinPuntReturnTouchdown',
-			MAX(Length)     AS 'ScoringLenMaxPuntReturnTouchdown'
+				COUNT(Length) AS 'ScoringFieldGoalReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringFieldGoalReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringFieldGoalReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringFieldGoalReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringFieldGoalReturnTouchdownSUM',
+			'FieldGoalReturnTouchdown' as 'ScoringType'
 		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'FieldGoalReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) FieldGoalReturnTouchdown ON a.jpetl_idfk = FieldGoalReturnTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringFumbleReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringFumbleReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringFumbleReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringFumbleReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringFumbleReturnTouchdownSUM',
+			'FumbleReturnTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'FumbleReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) FumbleReturnTouchdown ON a.jpetl_idfk = FumbleReturnTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringInterceptionReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringInterceptionReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringInterceptionReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringInterceptionReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringInterceptionReturnTouchdownSUM',
+			'InterceptionReturnTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'InterceptionReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) InterceptionReturnTouchdown ON a.jpetl_idfk = InterceptionReturnTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringKickoffReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringKickoffReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringKickoffReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringKickoffReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringKickoffReturnTouchdownSUM',
+			'KickoffReturnTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'KickoffReturnTouchdown'
+		GROUP BY jpetl_idfk
+	) KickoffReturnTouchdown ON a.jpetl_idfk = KickoffReturnTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringPassingTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringPassingTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringPassingTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringPassingTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringPassingTouchdownSUM',
+			'PassingTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'PassingTouchdown'
+		GROUP BY jpetl_idfk
+	) PassingTouchdown ON a.jpetl_idfk = PassingTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringPuntReturnTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringPuntReturnTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringPuntReturnTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringPuntReturnTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringPuntReturnTouchdownSUM',
+			'PuntReturnTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
 		WHERE ScoringType = 'PuntReturnTouchdown'
 		GROUP BY jpetl_idfk
 	) PuntReturnTouchdown ON a.jpetl_idfk = PuntReturnTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringReceivingTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringReceivingTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringReceivingTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringReceivingTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringReceivingTouchdownSUM',
+			'ReceivingTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'ReceivingTouchdown'
+		GROUP BY jpetl_idfk
+	) ReceivingTouchdown ON a.jpetl_idfk = ReceivingTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringRushingTouchdownCOUNT',
+			
+				MIN(Length) AS 'ScoringRushingTouchdownMIN',
+			
+				MAX(Length) AS 'ScoringRushingTouchdownMAX',
+			
+				AVG(Length) AS 'ScoringRushingTouchdownAVG',
+			
+				SUM(Length) AS 'ScoringRushingTouchdownSUM',
+			'RushingTouchdown' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'RushingTouchdown'
+		GROUP BY jpetl_idfk
+	) RushingTouchdown ON a.jpetl_idfk = RushingTouchdown.jpetl_idfk
+	
+	FULL JOIN (
+		SELECT jpetl_idfk,
+				COUNT(Length) AS 'ScoringSafetyCOUNT',
+			
+				MIN(Length) AS 'ScoringSafetyMIN',
+			
+				MAX(Length) AS 'ScoringSafetyMAX',
+			
+				AVG(Length) AS 'ScoringSafetyAVG',
+			
+				SUM(Length) AS 'ScoringSafetySUM',
+			'Safety' as 'ScoringType'
+		FROM tmawesome.[dbo].[ArrayOfPlayerGamePlayerGameScoringDetailsScoringDetail]
+		-- group by player-week
+		WHERE ScoringType = 'Safety'
+		GROUP BY jpetl_idfk
+	) Safety ON a.jpetl_idfk = Safety.jpetl_idfk
+	
 ) d ON p.[jpetl_id] = d.[jpetl_idfkd]
 ) vw
